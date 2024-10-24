@@ -11,16 +11,16 @@ bmiForm.addEventListener('submit', function(e){
     let feedback = "";
 
     if(bmi < 18.5){
-        feedback = "You are underweight. Consider increasing your intake of nutrient-rich foods to reach a healthier weight.";
+        feedback = "You are underweight";
     }
     else if(bmi >= 18.5 && bmi < 24.9){
-        feedback = "You have a normal weight. Keep maintaining a balanced diet and regular physical activity to stay healthy.";
+        feedback = "You have a normal weight";
     }
     else if(bmi >= 25 && bmi < 29.9){
-        feedback = "You are in the overweight range. It might be helpful to adjust your diet and increase physical activity to manage your weight.";
+        feedback = "You are in the overweight range";
     }
     else{
-        feedback = "You fall into the obese category. It's important to focus on a healthier lifestyle. Consider consulting a healthcare provider or nutritionist for personalized advice.";
+        feedback = "You fall into the obese category";
     }
 
     result.innerHTML = `Your BMI is:&nbsp&nbsp${bmi}<br>(${feedback})`;
